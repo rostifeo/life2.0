@@ -105,9 +105,9 @@ ul li a {
 /* Для десктопной версии */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 10px;
-    width: 100%; /* Добавлено для предотвращения переполнения */
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки для десктопа */
+    gap: 20px; /* Увеличенный промежуток между блоками */
+    width: 100%;
 }
 
 /* Общий стиль для блоков */
@@ -137,9 +137,10 @@ ul li a {
 /* Медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* 1 колонка */
-        gap: 15px; /* Увеличенный отступ между блоками */
+        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+        gap: 15px;
     }
+}
 
     .grid-item {
         padding: 15px; /* Увеличенный отступ для мобильных */
